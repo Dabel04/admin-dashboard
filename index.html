@@ -41,23 +41,24 @@
     <div class="d-flex h-100">
 
       <!-- SIDEBAR -->
-      <div id="sidebar" class="border-end p-3" style="width: 220px; height: 1500px; background-color: #5b2333; color: #f7f4f3;">
-        <h5 class="mb-4">Admin Dashboard</h5>
-        <p style="font-size:12px; opacity:.8;">Last login: Today 9:41 AM</p>
-        <ul class="nav flex-column mt-3">
-          <li class="nav-item mb-2"><a href="#" class="nav-link active"><i class="fa fa-tachometer"></i> Dashboard</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link"><i class="fa fa-keyboard"></i> Editor</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link"><i class="fa fa-users"></i> Leads</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link"><i class="fa fa-cogs"></i> Settings</a></li>
-          <li class="nav-item mb-2"><a href="website.html" class="nav-link"><i class="fa fa-eye"></i> View Website</a></li>
-        </ul>
+       <div>
+            <div id="sidebar" class="border-end p-3 d-none d-lg-block" style="width: 220px; height: 1500px; background-color: #5b2333; color: #f7f4f3;">
+                <h5 class="mb-4">Admin Dashboard</h5>
+                <p style="font-size:12px; opacity:.8;">Last login: Today 9:41 AM</p>
+                <ul class="nav flex-column mt-3">
+                <li class="nav-item mb-2"><a href="#" class="nav-link active"><i class="fa fa-tachometer"></i> Dashboard</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link"><i class="fa fa-keyboard"></i> Editor</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link"><i class="fa fa-users"></i> Leads</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link"><i class="fa fa-cogs"></i> Settings</a></li>
+                <li class="nav-item mb-2"><a href="website.html" class="nav-link"><i class="fa fa-eye"></i> View Website</a></li>
+                </ul>
 
-        <button id="toggleModeBtn" class="btn btn-outline-light mt-4 w-100">Toggle Dark Mode</button>
-      </div>
-
+                <button id="toggleModeBtn" class="btn btn-outline-light mt-4 w-100">Toggle Dark Mode</button>
+            </div>
+        </div>
 
       <!-- MAIN CONTENT -->
-      <div id="mainContent" class="flex-grow-1 p-4" style="background-color: #fff;">
+      <div id="mainContent" class="flex-grow-1 p-4 w-100" style="background-color: #fff;">
         <div class="d-flex justify-content-between align-items-center mb-3">
           <div>
             <h4>Admin Dashboard</h4>
@@ -147,7 +148,13 @@
           </div>
 
         </section>
-
+        <!-- MOBILE BOTTOM NAV (only phones) -->
+        <div id="mobileBottomNav" class="d-lg-none mobile-bottom-nav">
+            <a href="#" class="nav-item"><i class="fa fa-home"></i><br>Home</a>
+            <a href="#" class="nav-item"><i class="fa fa-keyboard"></i><br>Editor</a>
+            <a href="#" class="nav-item"><i class="fa fa-users"></i><br>Leads</a>
+            <a href="website.html" class="nav-item"><i class="fa fa-eye"></i><br>View Website</a>
+        </div>
       </div>
     </div>
   </div>

@@ -119,3 +119,87 @@
         background:#f7f4f3; 
         margin-right:40px;
     }
+
+    /* MOBILE BOTTOM NAV */
+.mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #5b2333;
+    color: #f7f4f3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
+    z-index: 9999;
+    border-radius: 10px 10px 0 0;
+}
+
+.mobile-bottom-nav .nav-item {
+    text-align: center;
+    font-size: 13px;
+    color: #f7f4f3;
+    text-decoration: none;
+}
+
+.mobile-bottom-nav .nav-item i {
+    font-size: 19px;
+    margin-bottom: 3px;
+}
+
+.mobile-bottom-nav .nav-item:hover {
+    opacity: 0.8;
+}
+
+/* Prevent bottom content from being hidden behind nav */
+@media (max-width: 768px) {
+    #mainContent {
+        padding-bottom: 90px !important;
+    }
+}
+
+    /* MOBILE RESPONSIVENESS FIXES */
+@media (max-width: 768px) {
+
+    body {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Fix Login alignment on phones */
+    .login-card {
+        margin-top: 40px;
+    }
+
+    /* Let header resize properly */
+    .header {
+        padding: 20px;
+        height: auto;
+    }
+
+    /* Stats cards 100% width */
+    .card-custom {
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
+
+    /* Notification cards full width */
+    .notify {
+        height: auto;
+        padding: 15px;
+    }
+
+    .notify img {
+        width: 55px;
+        height: 55px;
+    }
+
+    /* Overview spacing */
+    .overview {
+        margin-top: 2rem;
+        padding: 15px;
+    }
+}
