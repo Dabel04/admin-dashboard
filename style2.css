@@ -1,0 +1,118 @@
+:root{
+    --brand: #5b2333;
+    --light: #f7f4f3;
+    --text: #222;
+    --background: #ffffff;
+    --muted: #777;
+    --card: #f7f4f3;
+    --transition: .3s ease;
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+    --radius: 12px;
+}
+
+/* Dark Mode Variables */
+html[data-theme="dark"]{
+    --background: #1d1619;   /* New softer warm dark */
+    --text: #f7f4f3;
+    --muted: #f7f4f3;
+    --card: #2a1d22;         /* Matching dark plum for cards */
+    --shadow: 0 8px 28px rgba(0,0,0,0.45);
+}
+
+
+body{
+    font-family: "Inter", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    transition: background var(--transition), color var(--transition);
+}
+
+a{
+    text-decoration:none; color:inherit;
+}
+
+/* Navbar */
+.navbar-brand{
+    font-weight:700;
+    color:var(--brand) !important;
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+}
+.nav-link{
+    color:var(--muted) !important;
+    transition:var(--transition);
+}
+.nav-link:hover{
+    color:var(--brand) !important;
+}
+
+/* Buttons */
+.btn-brand{
+    background:var(--brand);
+    color:var(--light);
+    border-radius:10px;
+    transition:var(--transition);
+}
+.btn-brand:hover{
+    transform:translateY(-2px); opacity:.95;
+}
+
+.btn-outline{
+    border:1px solid var(--muted);
+    color:var(--text);
+    border-radius:10px;
+}
+
+/* Sections */
+section{
+    padding:4rem 0;
+}
+
+.card-box{
+    background:var(--card);
+    padding:2rem;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+.card-box:hover{
+    transform:translateY(-6px);
+}
+
+/* Services */
+.service-box{
+    background:var(--card);
+    padding:1.8rem;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+.service-box:hover{
+    transform:translateY(-6px);
+}
+
+.icon-box{
+    width:60px; height:60px;
+    border-radius:10px;
+    background:rgba(91,35,51,0.1);
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.4rem;
+    color:var(--brand);
+    margin-bottom:1rem;
+}
+
+/* Contact */
+.contact-card{
+    background:var(--card);
+    padding:2rem;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+
+/* Footer */
+footer{
+    padding:2rem 0;
+    text-align:center;
+    color:var(--muted);
+}

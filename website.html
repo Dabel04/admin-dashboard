@@ -1,11 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MakeCodeLit — Software & Digital Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
-    
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-code"></i> MakeCodeLit
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+          <li class="nav-item ms-3">
+            <a href="index.html" class="btn btn-brand">Admin Login</a>
+          </li>
+          
+          <!-- DARKMODE BUTTON -->
+          <li class="nav-item ms-3">
+            <button id="themeToggle" class="btn btn-outline">
+              <i id="themeIcon" class="fa-regular fa-moon"></i>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-lg-6">
+          <div class="card-box">
+            <h1 class="mb-3">Building Beautiful Digital Products</h1>
+            <p class="text-muted">MakeCodeLit creates modern, fast and elegant digital experiences for individuals and businesses.</p>
+
+            <div class="mt-4 d-flex gap-3">
+              <a href="#services" class="btn btn-brand">Our Services</a>
+              <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="card-box">
+            <h5 style="color:var(--brand);">We Specialize In:</h5>
+            <ul>
+              <li>Full responsive website builds</li>
+              <li>Web and app UI/UX design</li>
+              <li>Custom dashboards + tools</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="card-box">
+        <h2>About MakeCodeLit</h2>
+        <p class="text-muted">
+          We help companies and creators bring ideas to life through clean user interfaces, modern code, and strong product thinking.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <h2 class="mb-4">Our Services</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+            <h5>Custom Web Apps</h5>
+            <p class="text-muted">We build secure, scalable and modern applications for your business.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="icon-box"><i class="fa-solid fa-paintbrush"></i></div>
+            <h5>UI/UX Design</h5>
+            <p class="text-muted">Beautiful, user-focused interfaces that convert and delight users.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="icon-box"><i class="fa-solid fa-gears"></i></div>
+            <h5>Brand & Strategy</h5>
+            <p class="text-muted">We help you shape product identity with strong design systems.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <h2>Contact Us</h2>
+        <p class="text-muted">Reach out and we'll get back to you.</p>
+
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6"><input class="form-control" placeholder="Your name"></div>
+            <div class="col-md-6"><input class="form-control" placeholder="Email address"></div>
+            <div class="col-12">
+              <textarea rows="4" class="form-control" placeholder="Message"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-brand mt-3">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 MakeCodeLit — All Rights Reserved</p>
+  </footer>
+
+     <!-- Javascript section -->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+  <!-- DARK MODE -->
+  <script>
+    const toggleBtn = document.getElementById("themeToggle");
+    const themeIcon = document.getElementById("themeIcon");
+    const root = document.documentElement;
+
+    toggleBtn.onclick = () => {
+      const dark = root.getAttribute("data-theme") === "dark";
+      if (dark) {
+        root.removeAttribute("data-theme");
+        themeIcon.className = "fa-regular fa-moon";
+      } else {
+        root.setAttribute("data-theme", "dark");
+        themeIcon.className = "fa-solid fa-sun";
+      }
+    };
+  </script>
+
 </body>
 </html>
